@@ -12,14 +12,14 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Vārds') }}</label>
+                            <label for="vards" class="col-md-4 col-form-label text-md-right">{{ __('Vārds') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                                <input id="vards" type="text" class="form-control{{ $errors->has('vards') ? ' is-invalid' : '' }}" name="vards" value="{{ old('vards') }}" required autofocus>
 
-                                @if ($errors->has('name'))
+                                @if ($errors->has('vards'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                                        <strong>{{ $errors->first('vards') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -43,8 +43,8 @@
 
                             <div class="col-md-6 text-md-right">
                                 <select class="col-md-6-right form-control" name="loma">
-                                    <option value="0">Skolotājs</option>
-                                    <option value="1">Skolnieks</option>
+                                    <option value="skolotajs">Skolotājs</option>
+                                    <option value="skolnieks">Skolnieks</option>
                                  </select>
 
                                 @if ($errors->has('loma'))
@@ -56,38 +56,38 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Pasta Adrese') }}</label>
+                            <label for="epasts" class="col-md-4 col-form-label text-md-right">{{ __('E-Pasta Adrese') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                <input id="epasts" type="email" class="form-control{{ $errors->has('epasts') ? ' is-invalid' : '' }}" name="epasts" value="{{ old('epasts') }}" required>
 
-                                @if ($errors->has('email'))
+                                @if ($errors->has('epasts'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('epasts') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Parole') }}</label>
+                            <label for="parole" class="col-md-4 col-form-label text-md-right">{{ __('Parole') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                <input id="parole" type="password" class="form-control{{ $errors->has('parole') ? ' is-invalid' : '' }}" name="parole" required>
 
-                                @if ($errors->has('password'))
+                                @if ($errors->has('parole'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
+                                        <strong>{{ $errors->first('parole') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Apstipriniet Paroli') }}</label>
+                            <label for="paroles-apstiprinasana" class="col-md-4 col-form-label text-md-right">{{ __('Apstipriniet Paroli') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input id="paroles-apstiprinasana" type="password" class="form-control" name="paroles-apstiprinasana" required>
                             </div>
                         </div>
 
