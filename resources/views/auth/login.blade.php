@@ -12,28 +12,28 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="epasts" class="col-sm-4 col-form-label text-md-right">{{ __('E-Pasta Adrese') }}</label>
+                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Pasta Adrese') }}</label>
 
                             <div class="col-md-6">
-                                <input id="epasts" type="email" class="form-control{{ $errors->has('epasts') ? ' is-invalid' : '' }}" name="epasts" value="{{ old('epasts') }}" required autofocus>
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 
-                                @if ($errors->has('epasts'))
+                                @if ($errors->has('email'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('epasts') }}</strong>
+                                        <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="paroole" class="col-md-4 col-form-label text-md-right">{{ __('Parole') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Parole') }}</label>
 
                             <div class="col-md-6">
-                                <input id="parole" type="password" class="form-control{{ $errors->has('parole') ? ' is-invalid' : '' }}" name="parole" required>
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
-                                @if ($errors->has('parole'))
+                                @if ($errors->has('password'))
                                     <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('parole') }}</strong>
+                                        <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
                             </div>
