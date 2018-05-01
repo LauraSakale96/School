@@ -29,7 +29,7 @@
                             <label for="uzvards" class="col-md-4 col-form-label text-md-right">{{ __('Uzvārds') }}</label>
 
                             <div class="col-md-6">
-                                <input id="uzvards" type="text" >
+                                <input id="uzvards" type="text" class="form-control{{ $errors->has('uzvards') ? ' is-invalid' : '' }}" name="uzvards" value="{{ old('uzvards') }}" required>
 
                                 
                             </div>
