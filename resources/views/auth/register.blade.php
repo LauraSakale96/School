@@ -41,8 +41,8 @@
                         <div class="form-group{{ $errors->has('loma') ? ' has-error' : '' }}">
                             <label for="loma" class="col-md-4 control-label text-md-right">{{ __('Autorizēties kā:') }}</label>
 
-                            <div class="col-md-6">
-                                <select class="col-md-6 form-control right" name="loma">
+                            <div class="col-md-6 text-md-right">
+                                <select class="col-md-6-right form-control" name="loma">
                                     <option value="0">Skolotājs</option>
                                     <option value="1">Skolnieks</option>
                                  </select>
