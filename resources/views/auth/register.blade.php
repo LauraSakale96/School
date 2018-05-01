@@ -28,7 +28,7 @@
                             <label for="uzvards" class="col-md-4 col-form-label text-md-right">{{ __('Uzvārds') }}</label>
 
                             <div class="col-md-6">
-                                <input id="uzvards" type="text" class="form-control{{ $errors->has('uzvards') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                <input id="uzvards" type="text" class="form-control{{ $errors->has('uzvards') ? ' is-invalid' : '' }}" name="uzvards" value="{{ old('uzvards') }}" required>
 
                                 @if ($errors->has('uzvards'))
                                     <span class="invalid-feedback">
@@ -84,11 +84,11 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="paroles-apstiprinasana" class="col-md-4 col-form-label text-md-right">{{ __('Apstipriniet Paroli') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="paroles-apstiprinasana" type="password" class="form-control" name="paroles-apstiprinasana" required>
-                            </div>
+                                <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                    
+                                        <div class="col-md-6">
+                                              <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                         </div>
                         </div>
 
                         <div class="form-group row mb-0">
