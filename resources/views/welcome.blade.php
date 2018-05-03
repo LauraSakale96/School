@@ -13,42 +13,33 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
+                background: url(https://s14.postimg.cc/4ptk6uevl/Tutorer.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
                 margin: 0;
             }
-
             .full-height {
                 height: 100vh;
             }
-
             .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
             }
-
             .position-ref {
                 position: relative;
             }
-
             .top-right {
                 position: absolute;
                 right: 10px;
                 top: 18px;
             }
-
             .content {
                 text-align: center;
             }
-
             .title {
-                font-size: 100px;
+                font-size: 84px;
             }
-
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -58,7 +49,6 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -69,18 +59,16 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Mājas</a>
+                        <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Autentificēties</a>
-                        <a href="{{ route('register') }}">Autorizēties</a>
+                        <a href="{{ route('login') }}">Autentifikācija</a>
+                        <a href="{{ route('register') }}">Autorizācija</a>
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Tutorer
-                </div>
+                
 
             </div>
         </div>
