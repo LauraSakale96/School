@@ -34,6 +34,10 @@
                 right: 10px;
                 top: 18px;
             }
+            .position-ref {
+                position: relative;
+            }
+           
             .content {
                 text-align: center;
             }
