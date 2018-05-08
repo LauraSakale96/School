@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('content')
@@ -8,7 +7,7 @@
         background: #F0EAB8
     }
     </style>
-    }
+    
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
